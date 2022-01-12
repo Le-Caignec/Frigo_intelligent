@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="450.0" prefWidth="1000.0" spacing="10.0" style="-fx-background-color: #FBF2DB; -fx-border-color: #464441;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.tse.thextremdevs.smartfridge_app.view_manager.GraphCalandarController">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="10000.0" VBox.vgrow="ALWAYS">
+         <children>
+            <VBox layoutX="8.0" layoutY="-2.0" prefHeight="400.0" prefWidth="115.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="33.0" prefWidth="142.0" text="Add my nutriment" underline="true" />
+                  <CheckBox fx:id="calories" mnemonicParsing="false" onAction="#mon_calander" prefHeight="51.0" prefWidth="138.0" text="Calories" />
+                  <CheckBox fx:id="fat" mnemonicParsing="false" onAction="#mon_calander" prefHeight="51.0" prefWidth="138.0" text="Fat" />
+                  <CheckBox fx:id="sugar" mnemonicParsing="false" onAction="#mon_calander" prefHeight="51.0" prefWidth="138.0" text="Sugar" />
+                  <CheckBox fx:id="carbohydrates" mnemonicParsing="false" onAction="#mon_calander" prefHeight="51.0" prefWidth="138.0" text="Carbohydrates" />
+                  <CheckBox fx:id="magnesium" mnemonicParsing="false" onAction="#mon_calander" prefHeight="51.0" prefWidth="138.0" text="Magnesium" />
+                  <CheckBox fx:id="cholesterol" mnemonicParsing="false" onAction="#mon_calander" prefHeight="51.0" prefWidth="138.0" text="Cholesterol" />
+                  <CheckBox fx:id="satured_fat" mnemonicParsing="false" onAction="#mon_calander" prefHeight="51.0" prefWidth="138.0" text="Satured Fat" />
+               </children>
+            </VBox>
+            <LineChart fx:id="lineChart" animated="false" layoutX="104.0" layoutY="-8.0" prefHeight="431.0" prefWidth="851.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" fx:id="xAxis" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="yAxis" side="LEFT" lowerBound="0" upperBound="120" />
+              </yAxis>
+            </LineChart>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

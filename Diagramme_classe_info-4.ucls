@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="fr.tse.thextremdevs.smartfridge_app.recipes.AlimentCourse" 
+    project="smartfridge_app" 
+    file="/smartfridge_app/src/main/java/fr/tse/thextremdevs/smartfridge_app/recipes/AlimentCourse.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="245" width="221" x="4992" y="1265"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="fr.tse.thextremdevs.smartfridge_app.App" project="smartfridge_app" 
+    file="/smartfridge_app/src/main/java/fr/tse/thextremdevs/smartfridge_app/App.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="173" width="170" x="140" y="-586"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="fr.tse.thextremdevs.smartfridge_app.view_manager.NutrionnalFormularyController" 
+    project="smartfridge_app" 
+    file="/smartfridge_app/src/main/java/fr/tse/thextremdevs/smartfridge_app/view_manager/NutrionnalFormularyController.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="677" width="238" x="350" y="-586"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="fr.tse.thextremdevs.smartfridge_app.view_manager.RecipeController" 
+    project="smartfridge_app" 
+    file="/smartfridge_app/src/main/java/fr/tse/thextremdevs/smartfridge_app/view_manager/RecipeController.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="1307" width="465" x="5235" y="-586"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="fr.tse.thextremdevs.smartfridge_app.database_manager.Creat_new_BDD" 
+    project="smartfridge_app" 
+    file="/smartfridge_app/src/main/java/fr/tse/thextremdevs/smartfridge_app/database_manager/Creat_new_BDD.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="101" width="259" x="628" y="-586"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="fr.tse.thextremdevs.smartfridge_app.view_manager.GraphAlimentsController" 
+    project="smartfridge_app" 
+    file="/smartfridge_app/src/main/java/fr/tse/thextremdevs/smartfridge_app/view_manager/GraphAlimentsController.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="173" width="238" x="927" y="-586"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="fr.tse.thextremdevs.smartfridge_app.view_manager.AddIngrPopuController" 
+    project="smartfridge_app" 
+    file="/smartfridge_app/src/main/java/fr/tse/thextremdevs/smartfridge_app/view_manager/AddIngrPopuController.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="299" width="238" x="6065" y="-586"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="fr.tse.thextremdevs.smartfridge_app.recipes.Nutriments" project="smartfridge_app" 
+    file="/smartfridge_app/src/main/java/fr/tse/thextremdevs/smartfridge_app/recipes/Nutriments.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="1811" width="1130" x="1205" y="-586"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="fr.tse.thextremdevs.smartfridge_app.database_manager.BDD_favoris" 
+    project="smartfridge_app" 
+    file="/smartfridge_app/src/main/java/fr/tse/thextremdevs/smartfridge_app/database_manager/BDD_favoris.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="173" width="259" x="2375" y="-586"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="fr.tse.thextremdevs.smartfridge_app.database_manager.BDD_recettes" 
+    project="smartfridge_app" 
+    file="/smartfridge_app/src/main/java/fr/tse/thextremdevs/smartfridge_app/database_manager/BDD_recettes.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="155" width="259" x="2674" y="-586"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="fr.tse.thextremdevs.smartfridge_app.view_manager.HomeController" 
+    project="smartfridge_app" 
+    file="/smartfridge_app/src/main/java/fr/tse/thextremdevs/smartfridge_app/view_manager/HomeController.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="425" width="285" x="6343" y="-586"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="fr.tse.thextremdevs.smartfridge_app.database_manager.BDD_calandar" 
+    project="smartfridge_app" 
+    file="/smartfridge_app/src/main/java/fr/tse/thextremdevs/smartfridge_app/database_manager/BDD_calandar.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="659" width="387" x="2973" y="-586"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="fr.tse.thextremdevs.smartfridge_app.fridge.Aliment" project="smartfridge_app" 
+    file="/smartfridge_app/src/main/java/fr/tse/thextremdevs/smartfridge_app/fridge/Aliment.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="6387" y="1910"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="fr.tse.thextremdevs.smartfridge_app.database_manager.BDD_utilisateur" 
+    project="smartfridge_app" 
+    file="/smartfridge_app/src/main/java/fr/tse/thextremdevs/smartfridge_app/database_manager/BDD_utilisateur.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="191" width="259" x="3400" y="-586"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="fr.tse.thextremdevs.smartfridge_app.recipes.Recipe" project="smartfridge_app" 
+    file="/smartfridge_app/src/main/java/fr/tse/thextremdevs/smartfridge_app/recipes/Recipe.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="191" width="205" x="5600" y="1265"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="fr.tse.thextremdevs.smartfridge_app.fridge.EdamamManager" 
+    project="smartfridge_app" 
+    file="/smartfridge_app/src/main/java/fr/tse/thextremdevs/smartfridge_app/fridge/EdamamManager.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="173" width="231" x="3699" y="-586"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" name="fr.tse.thextremdevs.smartfridge_app.database_manager.BDD_frigo" 
+    project="smartfridge_app" 
+    file="/smartfridge_app/src/main/java/fr/tse/thextremdevs/smartfridge_app/database_manager/BDD_frigo.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="263" width="259" x="3970" y="-586"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="18" language="java" name="fr.tse.thextremdevs.smartfridge_app.view_manager.GraphCalandarController" 
+    project="smartfridge_app" 
+    file="/smartfridge_app/src/main/java/fr/tse/thextremdevs/smartfridge_app/view_manager/GraphCalandarController.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="443" width="238" x="4269" y="-586"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="19" language="java" name="fr.tse.thextremdevs.smartfridge_app.recipes.AlimentCompare" 
+    project="smartfridge_app" 
+    file="/smartfridge_app/src/main/java/fr/tse/thextremdevs/smartfridge_app/recipes/AlimentCompare.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="479" width="307" x="5253" y="1265"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="20" language="java" name="fr.tse.thextremdevs.smartfridge_app.view_manager.FridgeController" 
+    project="smartfridge_app" 
+    file="/smartfridge_app/src/main/java/fr/tse/thextremdevs/smartfridge_app/view_manager/FridgeController.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="803" width="285" x="6668" y="-586"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="21" language="java" name="fr.tse.thextremdevs.smartfridge_app.view_manager.ListController" 
+    project="smartfridge_app" 
+    file="/smartfridge_app/src/main/java/fr/tse/thextremdevs/smartfridge_app/view_manager/ListController.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="587" width="285" x="5740" y="-586"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="22" language="java" name="fr.tse.thextremdevs.smartfridge_app.recipes.SpoonacularManager" 
+    project="smartfridge_app" 
+    file="/smartfridge_app/src/main/java/fr/tse/thextremdevs/smartfridge_app/recipes/SpoonacularManager.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="605" width="370" x="4547" y="-586"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="23" language="java" name="fr.tse.thextremdevs.smartfridge_app.view_manager.GraphRecipController" 
+    project="smartfridge_app" 
+    file="/smartfridge_app/src/main/java/fr/tse/thextremdevs/smartfridge_app/view_manager/GraphRecipController.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="191" width="238" x="4957" y="-586"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="24">    
+    <bendpoint x="6746" y="858"/>    
+    <bendpoint x="6760" y="1172"/>    
+    <bendpoint x="6734" y="1416"/>    
+    <end type="SOURCE" refId="20" navigable="false">      
+      <attribute id="25" name="tableaualiment"/>      
+      <multiplicity id="26" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="27">    
+    <bendpoint x="6202" y="1078"/>    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="28" name="alimentChoose"/>      
+      <multiplicity id="29" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="30">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="31" name="liste_Course"/>      
+      <multiplicity id="32" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="33">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="34" name="tableauRecipeFav"/>      
+      <multiplicity id="35" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="15" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="36">    
+    <bendpoint x="6960" y="734"/>    
+    <bendpoint x="6834" y="1760"/>    
+    <end type="SOURCE" refId="20" navigable="false">      
+      <attribute id="37" name="alimentTableChoose"/>      
+      <multiplicity id="38" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="39">    
+    <bendpoint x="6812" y="1492"/>    
+    <end type="SOURCE" refId="20" navigable="false">      
+      <attribute id="40" name="value_double_clicked"/>      
+      <multiplicity id="41" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="42">    
+    <bendpoint x="6608" y="1252"/>    
+    <end type="SOURCE" refId="20" navigable="false">      
+      <attribute id="43" name="tabAlimentParsed"/>      
+      <multiplicity id="44" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="45">    
+    <bendpoint x="6016" y="1134"/>    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="46" name="tabAlimentParsed"/>      
+      <multiplicity id="47" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="48">    
+    <bendpoint x="5800" y="566"/>    
+    <bendpoint x="5876" y="1184"/>    
+    <bendpoint x="5872" y="1254"/>    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="49" name="tableauRecipeFav"/>      
+      <multiplicity id="50" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="15" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="51">    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="52" name="tableaualiment"/>      
+      <multiplicity id="53" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="54">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="55" name="tableauCompare"/>      
+      <multiplicity id="56" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="57">    
+    <bendpoint x="6706" y="846"/>    
+    <bendpoint x="6690" y="1154"/>    
+    <bendpoint x="6678" y="1422"/>    
+    <end type="SOURCE" refId="20" navigable="false">      
+      <attribute id="58" name="alimentChoose"/>      
+      <multiplicity id="59" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="60">    
+    <bendpoint x="6066" y="1538"/>    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="61" name="liste_aliment"/>      
+      <multiplicity id="62" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

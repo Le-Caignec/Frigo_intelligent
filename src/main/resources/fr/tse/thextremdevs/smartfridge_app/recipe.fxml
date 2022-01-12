@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #464441;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.tse.thextremdevs.smartfridge_app.view_manager.RecipeController">
+   <center>
+      <AnchorPane>
+         <children>
+            <HBox prefWidth="1200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox prefWidth="180.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <VBox HBox.hgrow="ALWAYS">
+                           <children>
+                              <AnchorPane prefHeight="50.0">
+                                 <children>
+                                    <Label alignment="TOP_CENTER" contentDisplay="TOP" text="Refine the search" textFill="#fbf2db" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <font>
+                                          <Font name="Segoe UI Historic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0">
+                                 <children>
+                                    <Accordion prefHeight="125.0" prefWidth="243.0" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <panes>
+                                          <TitledPane animated="false" prefHeight="133.0" prefWidth="243.0" text="Dish Type">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="91.0" prefWidth="241.0">
+                                                   <children>
+                                                      <CheckBox fx:id="lunch" layoutY="26.0" mnemonicParsing="false" onAction="#testCheckBoxLunch" prefHeight="15.0" prefWidth="145.0" text="Lunch" />
+                                                      <CheckBox fx:id="dinner" layoutY="46.0" mnemonicParsing="false" onAction="#testCheckBoxDinner" prefHeight="23.0" prefWidth="145.0" text="Dinner" />
+                                                      <CheckBox fx:id="dessert" layoutY="69.0" mnemonicParsing="false" onAction="#testCheckBoxDessert" prefHeight="23.0" prefWidth="145.0" text="Dessert" />
+                                                      <CheckBox fx:id="breakfast" layoutY="3.0" mnemonicParsing="false" onAction="#testCheckBoxBreakfast" prefHeight="17.0" prefWidth="145.0" text="BreakFast" />
+                                                   </children>
+                                                </AnchorPane>
+                                             </content>
+                                          </TitledPane>
+                                       </panes>
+                                    </Accordion>
+                                    <HBox layoutY="139.0" prefHeight="60.0" prefWidth="243.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="139.0">
+                                       <children>
+                                          <BorderPane HBox.hgrow="ALWAYS">
+                                             <center>
+                                                <Button fx:id="generate_list" alignment="CENTER" mnemonicParsing="false" onAction="#generateList" prefHeight="28.0" prefWidth="92.0" style="-fx-background-color: #fbf2db;" text="Generate List" textFill="#464441">
+                                                   <font>
+                                                      <Font name="Segoe UI Bold" size="12.0" />
+                                                   </font>
+                                                </Button>
+                                             </center>
+                                          </BorderPane>
+                                          <BorderPane HBox.hgrow="ALWAYS">
+                                             <center>
+                                                <Button fx:id="delete_list" alignment="CENTER" mnemonicParsing="false" onAction="#deleteList" prefHeight="28.0" prefWidth="80.0" style="-fx-background-color: #fbf2db;" text="Delete List" textFill="#464441">
+                                                   <font>
+                                                      <Font name="Segoe UI Bold" size="12.0" />
+                                                   </font>
+                                                </Button>
+                                             </center>
+                                          </BorderPane>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </AnchorPane>
+                              <VBox>
+                                 <children>
+                                    <AnchorPane prefHeight="50.0">
+                                       <children>
+                                          <Label alignment="CENTER" text="Recipe Finder " textFill="#fbf2db" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <font>
+                                                <Font name="Segoe UI Black" size="24.0" />
+                                             </font>
+                                             <graphic>
+                                                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                                             </graphic>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="20.0">
+                                       <children>
+                                          <Label alignment="CENTER" text="Search a recepe with a keyword" textFill="#fbf2db" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <font>
+                                                <Font name="Segoe UI Semibold Italic" size="14.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="20.0">
+                                       <children>
+                                          <Label alignment="CENTER" text="Then, select the recepe you want to use " textFill="#fbf2db" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <font>
+                                                <Font name="Segoe UI Semibold Italic" size="14.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                    <BorderPane>
+                                       <center>
+                                          <Button fx:id="recherche_mon_frigo" alignment="CENTER" mnemonicParsing="false" onAction="#searchRecepeFromMyFridge" style="-fx-background-color: #fbf2db;" text="Recipe by my fridge" textFill="#464441">
+                                             <font>
+                                                <Font name="Segoe UI Bold" size="14.0" />
+                                             </font>
+                                          </Button>
+                                       </center>
+                                    </BorderPane>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="30.0" prefWidth="145.0" />
+                                    <BorderPane prefHeight="38.0" prefWidth="243.0">
+                                       <center>
+                                          <Button fx:id="addRecepeName" alignment="CENTER" mnemonicParsing="false" onAction="#addRecepeName" style="-fx-background-color: #464441; -fx-border-color: #fbf2db; -fx-border-radius: 10;" text="Search by name" textFill="#fbf2db">
+                                             <font>
+                                                <Font name="Segoe UI Semibold" size="14.0" />
+                                             </font>
+                                             <graphic>
+                                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@img/search_button.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                       </center>
+                                    </BorderPane>
+                                    <AnchorPane>
+                                       <children>
+                                          <TextField fx:id="searchRecepeTxtField" layoutX="-2.0" layoutY="1.0" prefHeight="31.0" prefWidth="259.0" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="1.0" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="20.0" prefWidth="145.0" />
+                                    <BorderPane prefHeight="42.0" prefWidth="243.0">
+                                       <center>
+                                          <Button fx:id="AddRecepeActionByIngredients" alignment="CENTER" mnemonicParsing="false" onAction="#AddRecepeActionByIngredients" style="-fx-background-color: #464441; -fx-border-color: #fbf2db; -fx-border-radius: 10;" text="Search by ingredients" textFill="#fbf2db">
+                                             <font>
+                                                <Font name="Segoe UI Semibold" size="14.0" />
+                                             </font>
+                                             <graphic>
+                                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@img/search_button.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                       </center>
+                                    </BorderPane>
+                                    <AnchorPane>
+                                       <children>
+                                          <TextField fx:id="searchRecepeTxtFieldByIngredients" layoutX="-1.0" layoutY="-1.0" prefHeight="31.0" prefWidth="259.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="-1.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        <Separator orientation="VERTICAL" prefHeight="377.0" prefWidth="0.0" />
+                     </children>
+                  </HBox>
+                  <VBox layoutX="10.0" layoutY="10.0" prefWidth="170.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <AnchorPane prefHeight="50.0">
+                           <children>
+                              <Label alignment="TOP_CENTER" contentDisplay="TOP" text="Recipe Choice" textFill="#fbf2db" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <font>
+                                    <Font name="Segoe UI Historic" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="377.0" prefWidth="520.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <ListView fx:id="liste_recette" layoutX="10.0" layoutY="5.0" onMouseClicked="#recepeChoosen" prefHeight="536.0" prefWidth="295.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="5.0" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+                  <HBox prefWidth="600.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Separator orientation="VERTICAL" prefWidth="0.0" />
+                        <VBox HBox.hgrow="ALWAYS">
+                           <children>
+                              <AnchorPane prefHeight="50.0">
+                                 <children>
+                                    <Label alignment="TOP_CENTER" contentDisplay="TOP" text="Recipe Sheet" textFill="#fbf2db" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <font>
+                                          <Font name="Segoe UI Historic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Button fx:id="button_decoche" alignment="CENTER" mnemonicParsing="false" onAction="#decoche_clicked" style="-fx-background-color: #464441;" textFill="#fbf2db" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="0.0">
+                                       <font>
+                                          <Font name="Segoe UI Semibold" size="18.0" />
+                                       </font>
+                                       <graphic>
+                                          <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/favourite_decoche.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="button_coche" alignment="CENTER" mnemonicParsing="false" onAction="#coche_clicked" style="-fx-background-color: #464441;" textFill="#fbf2db" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="0.0">
+                                       <font>
+                                          <Font name="Segoe UI Semibold" size="18.0" />
+                                       </font>
+                                       <graphic>
+                                          <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/favourite_coche.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Label fx:id="Personns" alignment="CENTER" layoutX="491.0" layoutY="9.0" prefHeight="24.0" prefWidth="42.0" style="-fx-background-color: #464441;" text="4" textFill="#fbf2db">
+                                       <font>
+                                          <Font name="Segoe UI Bold" size="18.0" />
+                                       </font></Label>
+                                    <Button fx:id="Plus" contentDisplay="CENTER" layoutX="456.0" layoutY="8.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="35.0" style="-fx-background-color: #FBF2DB; -fx-padding: 0 0 0 0;" text="+" textFill="#464441">
+                                       <font>
+                                          <Font name="Segoe UI Bold" size="18.0" />
+                                       </font></Button>
+                                    <Button fx:id="Moins" layoutX="532.0" layoutY="8.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="31.0" style="-fx-background-color: #FBF2DB; -fx-padding: 0 0 0 0;" text="-">
+                                       <font>
+                                          <Font name="Segoe UI Bold" size="18.0" />
+                                       </font></Button>
+                                    <Label fx:id="minute" alignment="CENTER" depthTest="DISABLE" layoutX="582.0" layoutY="8.0" prefHeight="30.0" prefWidth="55.0" style="-fx-background-color: #FBF2DB; -fx-border-color: #464441; -fx-border-radius: 90px 90px; -fx-background-radius: 90px 90px;" text="Label">
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane>
+                                 <children>
+                                    <Label fx:id="labelRecipe" alignment="TOP_CENTER" contentDisplay="TOP" textFill="#fbf2db" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <font>
+                                          <Font name="Segoe UI Black" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Button fx:id="recipeDone" contentDisplay="RIGHT" layoutX="526.0" layoutY="4.0" mnemonicParsing="false" onAction="#RecipeDone" style="-fx-background-color: #464441; -fx-border-color: #FBF2DB; -fx-border-radius: 90px;" text="Recipe done" textFill="#fbf2db" AnchorPane.rightAnchor="10.0">
+                                       <graphic>
+                                          <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/checked-buttom.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    <Label fx:id="titleIng" alignment="CENTER" contentDisplay="CENTER" layoutX="415.0" layoutY="1.0" prefHeight="26.0" prefWidth="385.0" text="Ingredients" textFill="#fbf2db" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="415.0" AnchorPane.rightAnchor="-94.0" AnchorPane.topAnchor="1.0">
+                                       <font>
+                                          <Font name="Segoe UI Semibold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="30.0" />
+                              <HBox VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <BorderPane>
+                                       <top>
+                                          <VBox prefHeight="112.0" prefWidth="276.0" BorderPane.alignment="CENTER">
+                                             <children>
+                                                <HBox prefHeight="36.0" prefWidth="276.0">
+                                                   <children>
+                                                      <AnchorPane HBox.hgrow="ALWAYS">
+                                                         <children>
+                                                            <Label fx:id="calories" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #FBF2DB; -fx-border-color: #464441; -fx-border-radius: 90px 90px; -fx-background-radius: 90px 90px;" text="Label" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="10.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                      <AnchorPane HBox.hgrow="ALWAYS">
+                                                         <children>
+                                                            <Label fx:id="carbs" alignment="CENTER" depthTest="DISABLE" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #FBF2DB; -fx-border-color: #464441; -fx-border-radius: 90px 90px; -fx-background-radius: 90px 90px;" text="Label" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="10.0">
+                                                               <opaqueInsets>
+                                                                  <Insets />
+                                                               </opaqueInsets>
+                                                            </Label>
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </children>
+                                                </HBox>
+                                                <HBox prefHeight="37.0" prefWidth="276.0">
+                                                   <children>
+                                                      <AnchorPane>
+                                                         <children>
+                                                            <Label fx:id="fat" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #FBF2DB; -fx-border-color: #464441; -fx-border-radius: 90px 90px; -fx-background-radius: 90px 90px;" text="Label" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="10.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                      <AnchorPane>
+                                                         <children>
+                                                            <Label fx:id="protein" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #FBF2DB; -fx-border-color: #464441; -fx-border-radius: 90px 90px; -fx-background-radius: 90px 90px;" text="Label" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="10.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </children>
+                                                </HBox>
+                                                <HBox layoutX="10.0" layoutY="46.0" prefHeight="37.0" prefWidth="276.0">
+                                                   <children>
+                                                      <Label prefHeight="17.0" prefWidth="33.0" />
+                                                      <Label prefHeight="17.0" prefWidth="35.0" />
+                                                      <Button fx:id="graph_button_plus" mnemonicParsing="false" onAction="#open_mon_graph_recip" prefHeight="35.0" prefWidth="139.0" style="-fx-background-color: #464441; -fx-border-radius: 100px 100px; -fx-background-radius: 100px 100px;" text="Display Graph" textFill="#fbf2db">
+                                                         <graphic>
+                                                            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@img/addbutton_clair.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                         </graphic>
+                                                         <font>
+                                                            <Font name="Segoe UI Semibold" size="14.0" />
+                                                         </font>
+                                                      </Button>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </VBox>
+                                       </top>
+                                       <left>
+                                          <ImageView fx:id="imageRecette" fitHeight="202.0" fitWidth="276.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+                                       </left>
+                                    </BorderPane>
+                                    <AnchorPane>
+                                       <children>
+                                          <VBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <AnchorPane />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <VBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <Label fx:id="titleIng" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="386.0" text="Ingredients" textFill="#fbf2db">
+                                                   <font>
+                                                      <Font name="Segoe UI Semibold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <TableView fx:id="IngrR" prefHeight="400.0" prefWidth="441.0">
+                                                  <columns>
+                                                    <TableColumn fx:id="columnName" prefWidth="172.0" text="Name" />
+                                                    <TableColumn fx:id="columnNeeded" minWidth="0.0" prefWidth="66.0" text="Qty Need" />
+                                                      <TableColumn fx:id="columnUnitNeeded" prefWidth="55.0" text="U" />
+                                                      <TableColumn fx:id="columnOwned" prefWidth="62.0" text="Qty Own" />
+                                                      <TableColumn fx:id="columnUnitOwned" prefWidth="59.0" text="U" />
+                                                  </columns>
+                                                </TableView>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                              <AnchorPane>
+                                 <children>
+                                    <Label fx:id="titleStep" alignment="CENTER" contentDisplay="CENTER" text="Preparation Steps" textFill="#fbf2db" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+                                       <font>
+                                          <Font name="Segoe UI Semibold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <HBox>
+                                 <children>
+                                    <AnchorPane>
+                                       <children>
+                                          <ListView fx:id="ficheRecette" prefHeight="214.0" prefWidth="698.0" style="-fx-background-color: #FBF2DB;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="0.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <AnchorPane prefHeight="96.0" prefWidth="720.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutY="10.0" prefHeight="62.0" prefWidth="720.0" style="-fx-background-color: #FBF2DB;" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="15.0">
+               <children>
+                  <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="720.0" text="RECIPES" textFill="#464441" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Segoe UI Black" size="34.0" />
+                     </font>
+                  </Label>
+                  <Button contentDisplay="TOP" layoutX="8.0" layoutY="2.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="62.0" prefWidth="61.0" style="-fx-background-color: #fbf2db;" text="Home" textFill="#464441" AnchorPane.bottomAnchor="5.0" AnchorPane.topAnchor="5.0">
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/home.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Segoe UI Black" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button contentDisplay="TOP" layoutX="75.0" layoutY="5.0" mnemonicParsing="false" onAction="#switchToFridge" prefHeight="62.0" prefWidth="61.0" style="-fx-background-color: #fbf2db;" text="Fridge" textFill="#464441">
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/fridgeBlack.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Segoe UI Black" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button contentDisplay="TOP" layoutX="141.0" layoutY="5.0" mnemonicParsing="false" onAction="#switchToRecipe" prefHeight="62.0" prefWidth="61.0" style="-fx-background-color: #464441;" text="Recipes" textFill="#fbf2db">
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/recipe-book.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Segoe UI Black" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button contentDisplay="TOP" layoutX="205.0" layoutY="5.0" mnemonicParsing="false" onAction="#switchToList" prefHeight="62.0" prefWidth="67.0" style="-fx-background-color: #fbf2db;" text="Profile" textFill="#464441">
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/Profil.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Segoe UI Black" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>
