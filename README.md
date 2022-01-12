@@ -1,0 +1,1 @@
+Frigo_intelligent
